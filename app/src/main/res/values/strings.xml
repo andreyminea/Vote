@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vote App</string>
+
+    <string-array name="Options">
+        <item>Sign Out</item>
+
+    </string-array>
+</resources>

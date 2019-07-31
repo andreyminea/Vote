@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoteActivity">
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        android:text="Select one of the options below:"
+        android:textSize="20sp"
+        android:textColor="#111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/voteA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="voteSelected"
+            android:text="Candidate A"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/voteB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="voteSelected"
+            android:text="Candidate B"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/voteC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="voteSelected"
+            android:text="Candidate C"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/voteD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="voteSelected"
+            android:text="Candidate D"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/voteE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="voteSelected"
+            android:text="Candidate E"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/vote_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Vote"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
